@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C8A7FC6B9064C70AE66B0C3 /* Pods_AMSDK_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C2EB7D261C77C952A4512D /* Pods_AMSDK_iOS_Tests.framework */; };
+		3642570F2DB0BADD00F45DB9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3642570D2DB0BADD00F45DB9 /* Localizable.strings */; };
+		364257162DB0D5F300F45DB9 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 364257152DB0D5F300F45DB9 /* I18nManager.m */; };
+		365DD5532DB0DC7A00A27EBF /* config in Resources */ = {isa = PBXBuildFile; fileRef = 365DD5522DB0DC7A00A27EBF /* config */; };
+		36F228492DAE456200FFAD73 /* XHudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228452DAE456200FFAD73 /* XHudManager.m */; };
+		36F2284A2DAE456200FFAD73 /* QYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228342DAE456200FFAD73 /* QYViewController.m */; };
+		36F2284B2DAE456200FFAD73 /* PDFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228422DAE456200FFAD73 /* PDFUtil.m */; };
+		36F2284C2DAE456200FFAD73 /* XSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228472DAE456200FFAD73 /* XSingleView.m */; };
+		36F2284D2DAE456200FFAD73 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F228312DAE456200FFAD73 /* File.swift */; };
+		36F2284E2DAE456200FFAD73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2282E2DAE456200FFAD73 /* AppDelegate.m */; };
+		36F228532DAE456200FFAD73 /* printImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F228322DAE456200FFAD73 /* printImg.png */; };
+		36F228542DAE456200FFAD73 /* test4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36F2283F2DAE456200FFAD73 /* test4.pdf */; };
+		36F228552DAE456200FFAD73 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36F2283E2DAE456200FFAD73 /* test.pdf */; };
+		36F2288E2DAE45D200FFAD73 /* QYPrinterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2286D2DAE45D200FFAD73 /* QYPrinterListViewController.m */; };
+		36F2288F2DAE45D200FFAD73 /* QYFrameActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228612DAE45D200FFAD73 /* QYFrameActionViewController.m */; };
+		36F228912DAE45D200FFAD73 /* QYLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228882DAE45D200FFAD73 /* QYLocationManager.m */; };
+		36F228922DAE45D200FFAD73 /* PrinterSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228842DAE45D200FFAD73 /* PrinterSetViewController.m */; };
+		36F228932DAE45D200FFAD73 /* QYClickEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2285B2DAE45D200FFAD73 /* QYClickEditCell.m */; };
+		36F228952DAE45D200FFAD73 /* PrinterHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228592DAE45D200FFAD73 /* PrinterHomeViewController.m */; };
+		36F228962DAE45D200FFAD73 /* QYClickSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2285E2DAE45D200FFAD73 /* QYClickSelectCell.m */; };
+		36F228972DAE45D200FFAD73 /* QYWifiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2288C2DAE45D200FFAD73 /* QYWifiSelectViewController.m */; };
+		36F2289A2DAE45D200FFAD73 /* QYPrintActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228672DAE45D200FFAD73 /* QYPrintActionViewController.m */; };
+		36F2289D2DAE45D200FFAD73 /* QYLocalNetworkAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228862DAE45D200FFAD73 /* QYLocalNetworkAuthorization.m */; };
+		36F2289E2DAE45D200FFAD73 /* QYSetSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228712DAE45D200FFAD73 /* QYSetSelectCell.m */; };
+		36F2289F2DAE45D200FFAD73 /* QYImageActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228632DAE45D200FFAD73 /* QYImageActionViewController.m */; };
+		36F228A02DAE45D200FFAD73 /* QYInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228652DAE45D200FFAD73 /* QYInfoTableViewCell.m */; };
+		36F228A12DAE45D200FFAD73 /* QYTextActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228742DAE45D200FFAD73 /* QYTextActionViewController.m */; };
+		36F228A22DAE45D200FFAD73 /* QYModeSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2288A2DAE45D200FFAD73 /* QYModeSelectViewController.m */; };
+		36F228A32DAE45D200FFAD73 /* QYPrinterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2286A2DAE45D200FFAD73 /* QYPrinterCell.m */; };
+		36F228A42DAE45D200FFAD73 /* QYPrintModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F2286F2DAE45D200FFAD73 /* QYPrintModel.m */; };
+		36F228A52DAE45D200FFAD73 /* QYSetSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F228722DAE45D200FFAD73 /* QYSetSelectCell.xib */; };
+		36F228A62DAE45D200FFAD73 /* QYPrintActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F228682DAE45D200FFAD73 /* QYPrintActionViewController.xib */; };
+		36F228A72DAE45D200FFAD73 /* QYPrinterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F2286B2DAE45D200FFAD73 /* QYPrinterCell.xib */; };
+		36F228A82DAE45D200FFAD73 /* QYClickEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F2285C2DAE45D200FFAD73 /* QYClickEditCell.xib */; };
+		36F228A92DAE45D200FFAD73 /* QYClickSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F2285F2DAE45D200FFAD73 /* QYClickSelectCell.xib */; };
+		36F228AD2DAE49A700FFAD73 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228AB2DAE49A700FFAD73 /* BaseViewController.m */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9318F83EBE8D53192D273706 /* Pods_AMSDK_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE79FC21B2496A1F648B922 /* Pods_AMSDK_iOS_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = "AMSDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C5D7289EC95FDC6F922E16A /* Pods-AMSDK-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSDK-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-AMSDK-iOS_Example/Pods-AMSDK-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		125A2487AE41D993DCDB090F /* Pods-AMSDK-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSDK-iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AMSDK-iOS_Tests/Pods-AMSDK-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3642570E2DB0BADD00F45DB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		364257122DB0CCBA00F45DB9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		364257132DB0CCBF00F45DB9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		364257142DB0D5F300F45DB9 /* I18nManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = I18nManager.h; sourceTree = "<group>"; };
+		364257152DB0D5F300F45DB9 /* I18nManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
+		365DD5522DB0DC7A00A27EBF /* config */ = {isa = PBXFileReference; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
+		36F2282D2DAE456200FFAD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36F2282E2DAE456200FFAD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36F2282F2DAE456200FFAD73 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		36F228312DAE456200FFAD73 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		36F228322DAE456200FFAD73 /* printImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = printImg.png; sourceTree = "<group>"; };
+		36F228332DAE456200FFAD73 /* QYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYViewController.h; sourceTree = "<group>"; };
+		36F228342DAE456200FFAD73 /* QYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYViewController.m; sourceTree = "<group>"; };
+		36F2283E2DAE456200FFAD73 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		36F2283F2DAE456200FFAD73 /* test4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test4.pdf; sourceTree = "<group>"; };
+		36F228412DAE456200FFAD73 /* PDFUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFUtil.h; sourceTree = "<group>"; };
+		36F228422DAE456200FFAD73 /* PDFUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFUtil.m; sourceTree = "<group>"; };
+		36F228442DAE456200FFAD73 /* XHudManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHudManager.h; sourceTree = "<group>"; };
+		36F228452DAE456200FFAD73 /* XHudManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHudManager.m; sourceTree = "<group>"; };
+		36F228462DAE456200FFAD73 /* XSingleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSingleView.h; sourceTree = "<group>"; };
+		36F228472DAE456200FFAD73 /* XSingleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSingleView.m; sourceTree = "<group>"; };
+		36F228582DAE45D200FFAD73 /* PrinterHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterHomeViewController.h; sourceTree = "<group>"; };
+		36F228592DAE45D200FFAD73 /* PrinterHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrinterHomeViewController.m; sourceTree = "<group>"; };
+		36F2285A2DAE45D200FFAD73 /* QYClickEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYClickEditCell.h; sourceTree = "<group>"; };
+		36F2285B2DAE45D200FFAD73 /* QYClickEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYClickEditCell.m; sourceTree = "<group>"; };
+		36F2285C2DAE45D200FFAD73 /* QYClickEditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYClickEditCell.xib; sourceTree = "<group>"; };
+		36F2285D2DAE45D200FFAD73 /* QYClickSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYClickSelectCell.h; sourceTree = "<group>"; };
+		36F2285E2DAE45D200FFAD73 /* QYClickSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYClickSelectCell.m; sourceTree = "<group>"; };
+		36F2285F2DAE45D200FFAD73 /* QYClickSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYClickSelectCell.xib; sourceTree = "<group>"; };
+		36F228602DAE45D200FFAD73 /* QYFrameActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYFrameActionViewController.h; sourceTree = "<group>"; };
+		36F228612DAE45D200FFAD73 /* QYFrameActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYFrameActionViewController.m; sourceTree = "<group>"; };
+		36F228622DAE45D200FFAD73 /* QYImageActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYImageActionViewController.h; sourceTree = "<group>"; };
+		36F228632DAE45D200FFAD73 /* QYImageActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYImageActionViewController.m; sourceTree = "<group>"; };
+		36F228642DAE45D200FFAD73 /* QYInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYInfoTableViewCell.h; sourceTree = "<group>"; };
+		36F228652DAE45D200FFAD73 /* QYInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYInfoTableViewCell.m; sourceTree = "<group>"; };
+		36F228662DAE45D200FFAD73 /* QYPrintActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYPrintActionViewController.h; sourceTree = "<group>"; };
+		36F228672DAE45D200FFAD73 /* QYPrintActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYPrintActionViewController.m; sourceTree = "<group>"; };
+		36F228682DAE45D200FFAD73 /* QYPrintActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYPrintActionViewController.xib; sourceTree = "<group>"; };
+		36F228692DAE45D200FFAD73 /* QYPrinterCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYPrinterCell.h; sourceTree = "<group>"; };
+		36F2286A2DAE45D200FFAD73 /* QYPrinterCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYPrinterCell.m; sourceTree = "<group>"; };
+		36F2286B2DAE45D200FFAD73 /* QYPrinterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYPrinterCell.xib; sourceTree = "<group>"; };
+		36F2286C2DAE45D200FFAD73 /* QYPrinterListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYPrinterListViewController.h; sourceTree = "<group>"; };
+		36F2286D2DAE45D200FFAD73 /* QYPrinterListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYPrinterListViewController.m; sourceTree = "<group>"; };
+		36F2286E2DAE45D200FFAD73 /* QYPrintModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYPrintModel.h; sourceTree = "<group>"; };
+		36F2286F2DAE45D200FFAD73 /* QYPrintModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYPrintModel.m; sourceTree = "<group>"; };
+		36F228702DAE45D200FFAD73 /* QYSetSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYSetSelectCell.h; sourceTree = "<group>"; };
+		36F228712DAE45D200FFAD73 /* QYSetSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYSetSelectCell.m; sourceTree = "<group>"; };
+		36F228722DAE45D200FFAD73 /* QYSetSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYSetSelectCell.xib; sourceTree = "<group>"; };
+		36F228732DAE45D200FFAD73 /* QYTextActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYTextActionViewController.h; sourceTree = "<group>"; };
+		36F228742DAE45D200FFAD73 /* QYTextActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYTextActionViewController.m; sourceTree = "<group>"; };
+		36F228832DAE45D200FFAD73 /* PrinterSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterSetViewController.h; sourceTree = "<group>"; };
+		36F228842DAE45D200FFAD73 /* PrinterSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrinterSetViewController.m; sourceTree = "<group>"; };
+		36F228852DAE45D200FFAD73 /* QYLocalNetworkAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYLocalNetworkAuthorization.h; sourceTree = "<group>"; };
+		36F228862DAE45D200FFAD73 /* QYLocalNetworkAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYLocalNetworkAuthorization.m; sourceTree = "<group>"; };
+		36F228872DAE45D200FFAD73 /* QYLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYLocationManager.h; sourceTree = "<group>"; };
+		36F228882DAE45D200FFAD73 /* QYLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYLocationManager.m; sourceTree = "<group>"; };
+		36F228892DAE45D200FFAD73 /* QYModeSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYModeSelectViewController.h; sourceTree = "<group>"; };
+		36F2288A2DAE45D200FFAD73 /* QYModeSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYModeSelectViewController.m; sourceTree = "<group>"; };
+		36F2288B2DAE45D200FFAD73 /* QYWifiSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYWifiSelectViewController.h; sourceTree = "<group>"; };
+		36F2288C2DAE45D200FFAD73 /* QYWifiSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYWifiSelectViewController.m; sourceTree = "<group>"; };
+		36F228AA2DAE49A700FFAD73 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		36F228AB2DAE49A700FFAD73 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* AMSDK-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMSDK-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* AMSDK-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AMSDK-iOS-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* AMSDK-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMSDK-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* AMSDK-iOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AMSDK-iOS_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98908AE8800F07E489CE6806 /* AMSDK-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "AMSDK-iOS.podspec"; path = "../AMSDK-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AE79FC21B2496A1F648B922 /* Pods_AMSDK_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMSDK_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62C213B469D329AA38F796A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CC63217B2725D062F8E48CDE /* Pods-AMSDK-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSDK-iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-AMSDK-iOS_Tests/Pods-AMSDK-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F199BD6D0657E1E23E953103 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F4C2EB7D261C77C952A4512D /* Pods_AMSDK_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMSDK_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86822A79066D9E0FA8E962D /* Pods-AMSDK-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSDK-iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-AMSDK-iOS_Example/Pods-AMSDK-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				9318F83EBE8D53192D273706 /* Pods_AMSDK_iOS_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				1C8A7FC6B9064C70AE66B0C3 /* Pods_AMSDK_iOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36F228302DAE456200FFAD73 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				36F2282F2DAE456200FFAD73 /* Constant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		36F228402DAE456200FFAD73 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				36F2283E2DAE456200FFAD73 /* test.pdf */,
+				36F2283F2DAE456200FFAD73 /* test4.pdf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		36F228432DAE456200FFAD73 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				36F228412DAE456200FFAD73 /* PDFUtil.h */,
+				36F228422DAE456200FFAD73 /* PDFUtil.m */,
+				364257142DB0D5F300F45DB9 /* I18nManager.h */,
+				364257152DB0D5F300F45DB9 /* I18nManager.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		36F228482DAE456200FFAD73 /* XHudManager */ = {
+			isa = PBXGroup;
+			children = (
+				36F228442DAE456200FFAD73 /* XHudManager.h */,
+				36F228452DAE456200FFAD73 /* XHudManager.m */,
+				36F228462DAE456200FFAD73 /* XSingleView.h */,
+				36F228472DAE456200FFAD73 /* XSingleView.m */,
+			);
+			path = XHudManager;
+			sourceTree = "<group>";
+		};
+		36F228752DAE45D200FFAD73 /* NewVersion */ = {
+			isa = PBXGroup;
+			children = (
+				36F228582DAE45D200FFAD73 /* PrinterHomeViewController.h */,
+				36F228592DAE45D200FFAD73 /* PrinterHomeViewController.m */,
+				36F2285A2DAE45D200FFAD73 /* QYClickEditCell.h */,
+				36F2285B2DAE45D200FFAD73 /* QYClickEditCell.m */,
+				36F2285C2DAE45D200FFAD73 /* QYClickEditCell.xib */,
+				36F2285D2DAE45D200FFAD73 /* QYClickSelectCell.h */,
+				36F2285E2DAE45D200FFAD73 /* QYClickSelectCell.m */,
+				36F2285F2DAE45D200FFAD73 /* QYClickSelectCell.xib */,
+				36F228602DAE45D200FFAD73 /* QYFrameActionViewController.h */,
+				36F228612DAE45D200FFAD73 /* QYFrameActionViewController.m */,
+				36F228622DAE45D200FFAD73 /* QYImageActionViewController.h */,
+				36F228632DAE45D200FFAD73 /* QYImageActionViewController.m */,
+				36F228642DAE45D200FFAD73 /* QYInfoTableViewCell.h */,
+				36F228652DAE45D200FFAD73 /* QYInfoTableViewCell.m */,
+				36F228662DAE45D200FFAD73 /* QYPrintActionViewController.h */,
+				36F228672DAE45D200FFAD73 /* QYPrintActionViewController.m */,
+				36F228682DAE45D200FFAD73 /* QYPrintActionViewController.xib */,
+				36F228692DAE45D200FFAD73 /* QYPrinterCell.h */,
+				36F2286A2DAE45D200FFAD73 /* QYPrinterCell.m */,
+				36F2286B2DAE45D200FFAD73 /* QYPrinterCell.xib */,
+				36F2286C2DAE45D200FFAD73 /* QYPrinterListViewController.h */,
+				36F2286D2DAE45D200FFAD73 /* QYPrinterListViewController.m */,
+				36F2286E2DAE45D200FFAD73 /* QYPrintModel.h */,
+				36F2286F2DAE45D200FFAD73 /* QYPrintModel.m */,
+				36F228702DAE45D200FFAD73 /* QYSetSelectCell.h */,
+				36F228712DAE45D200FFAD73 /* QYSetSelectCell.m */,
+				36F228722DAE45D200FFAD73 /* QYSetSelectCell.xib */,
+				36F228732DAE45D200FFAD73 /* QYTextActionViewController.h */,
+				36F228742DAE45D200FFAD73 /* QYTextActionViewController.m */,
+			);
+			path = NewVersion;
+			sourceTree = "<group>";
+		};
+		36F228822DAE45D200FFAD73 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		36F2288D2DAE45D200FFAD73 /* Printer */ = {
+			isa = PBXGroup;
+			children = (
+				36F228752DAE45D200FFAD73 /* NewVersion */,
+				36F228822DAE45D200FFAD73 /* Set */,
+				36F228832DAE45D200FFAD73 /* PrinterSetViewController.h */,
+				36F228842DAE45D200FFAD73 /* PrinterSetViewController.m */,
+				36F228852DAE45D200FFAD73 /* QYLocalNetworkAuthorization.h */,
+				36F228862DAE45D200FFAD73 /* QYLocalNetworkAuthorization.m */,
+				36F228872DAE45D200FFAD73 /* QYLocationManager.h */,
+				36F228882DAE45D200FFAD73 /* QYLocationManager.m */,
+				36F228892DAE45D200FFAD73 /* QYModeSelectViewController.h */,
+				36F2288A2DAE45D200FFAD73 /* QYModeSelectViewController.m */,
+				36F2288B2DAE45D200FFAD73 /* QYWifiSelectViewController.h */,
+				36F2288C2DAE45D200FFAD73 /* QYWifiSelectViewController.m */,
+			);
+			path = Printer;
+			sourceTree = "<group>";
+		};
+		36F228AC2DAE49A700FFAD73 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				36F228AA2DAE49A700FFAD73 /* BaseViewController.h */,
+				36F228AB2DAE49A700FFAD73 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for AMSDK-iOS */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				790CE782B0E0A311A909D9ED /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* AMSDK-iOS_Example.app */,
+				6003F5AE195388D20070C39A /* AMSDK-iOS_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				9AE79FC21B2496A1F648B922 /* Pods_AMSDK_iOS_Example.framework */,
+				F4C2EB7D261C77C952A4512D /* Pods_AMSDK_iOS_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for AMSDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				365DD5522DB0DC7A00A27EBF /* config */,
+				36F228AC2DAE49A700FFAD73 /* Base */,
+				36F2288D2DAE45D200FFAD73 /* Printer */,
+				36F2282D2DAE456200FFAD73 /* AppDelegate.h */,
+				36F2282E2DAE456200FFAD73 /* AppDelegate.m */,
+				36F228302DAE456200FFAD73 /* Constant */,
+				36F228312DAE456200FFAD73 /* File.swift */,
+				36F228322DAE456200FFAD73 /* printImg.png */,
+				36F228332DAE456200FFAD73 /* QYViewController.h */,
+				36F228342DAE456200FFAD73 /* QYViewController.m */,
+				36F228402DAE456200FFAD73 /* Resource */,
+				36F228432DAE456200FFAD73 /* Util */,
+				36F228482DAE456200FFAD73 /* XHudManager */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+				3642570D2DB0BADD00F45DB9 /* Localizable.strings */,
+			);
+			name = "Example for AMSDK-iOS";
+			path = "AMSDK-iOS";
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* AMSDK-iOS-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* AMSDK-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				98908AE8800F07E489CE6806 /* AMSDK-iOS.podspec */,
+				B62C213B469D329AA38F796A /* README.md */,
+				F199BD6D0657E1E23E953103 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		790CE782B0E0A311A909D9ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C5D7289EC95FDC6F922E16A /* Pods-AMSDK-iOS_Example.debug.xcconfig */,
+				F86822A79066D9E0FA8E962D /* Pods-AMSDK-iOS_Example.release.xcconfig */,
+				125A2487AE41D993DCDB090F /* Pods-AMSDK-iOS_Tests.debug.xcconfig */,
+				CC63217B2725D062F8E48CDE /* Pods-AMSDK-iOS_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* AMSDK-iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "AMSDK-iOS_Example" */;
+			buildPhases = (
+				41EF72D6EF2291DDFA17A964 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AMSDK-iOS_Example";
+			productName = "AMSDK-iOS";
+			productReference = 6003F58A195388D20070C39A /* AMSDK-iOS_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* AMSDK-iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "AMSDK-iOS_Tests" */;
+			buildPhases = (
+				67AEAA62D81CEDE5ABF7A602 /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = "AMSDK-iOS_Tests";
+			productName = "AMSDK-iOSTests";
+			productReference = 6003F5AE195388D20070C39A /* AMSDK-iOS_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AM;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = pengbi;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = J7DJ82QB95;
+						LastSwiftMigration = 1620;
+						ProvisioningStyle = Automatic;
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "AMSDK-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* AMSDK-iOS_Example */,
+				6003F5AD195388D20070C39A /* AMSDK-iOS_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				36F228532DAE456200FFAD73 /* printImg.png in Resources */,
+				36F228542DAE456200FFAD73 /* test4.pdf in Resources */,
+				36F228552DAE456200FFAD73 /* test.pdf in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				36F228A52DAE45D200FFAD73 /* QYSetSelectCell.xib in Resources */,
+				36F228A62DAE45D200FFAD73 /* QYPrintActionViewController.xib in Resources */,
+				3642570F2DB0BADD00F45DB9 /* Localizable.strings in Resources */,
+				36F228A72DAE45D200FFAD73 /* QYPrinterCell.xib in Resources */,
+				365DD5532DB0DC7A00A27EBF /* config in Resources */,
+				36F228A82DAE45D200FFAD73 /* QYClickEditCell.xib in Resources */,
+				36F228A92DAE45D200FFAD73 /* QYClickSelectCell.xib in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41EF72D6EF2291DDFA17A964 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMSDK-iOS_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67AEAA62D81CEDE5ABF7A602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMSDK-iOS_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F2288E2DAE45D200FFAD73 /* QYPrinterListViewController.m in Sources */,
+				36F2288F2DAE45D200FFAD73 /* QYFrameActionViewController.m in Sources */,
+				364257162DB0D5F300F45DB9 /* I18nManager.m in Sources */,
+				36F228912DAE45D200FFAD73 /* QYLocationManager.m in Sources */,
+				36F228922DAE45D200FFAD73 /* PrinterSetViewController.m in Sources */,
+				36F228932DAE45D200FFAD73 /* QYClickEditCell.m in Sources */,
+				36F228952DAE45D200FFAD73 /* PrinterHomeViewController.m in Sources */,
+				36F228962DAE45D200FFAD73 /* QYClickSelectCell.m in Sources */,
+				36F228972DAE45D200FFAD73 /* QYWifiSelectViewController.m in Sources */,
+				36F2289A2DAE45D200FFAD73 /* QYPrintActionViewController.m in Sources */,
+				36F2289D2DAE45D200FFAD73 /* QYLocalNetworkAuthorization.m in Sources */,
+				36F2289E2DAE45D200FFAD73 /* QYSetSelectCell.m in Sources */,
+				36F228AD2DAE49A700FFAD73 /* BaseViewController.m in Sources */,
+				36F2289F2DAE45D200FFAD73 /* QYImageActionViewController.m in Sources */,
+				36F228A02DAE45D200FFAD73 /* QYInfoTableViewCell.m in Sources */,
+				36F228A12DAE45D200FFAD73 /* QYTextActionViewController.m in Sources */,
+				36F228A22DAE45D200FFAD73 /* QYModeSelectViewController.m in Sources */,
+				36F228A32DAE45D200FFAD73 /* QYPrinterCell.m in Sources */,
+				36F228A42DAE45D200FFAD73 /* QYPrintModel.m in Sources */,
+				36F228492DAE456200FFAD73 /* XHudManager.m in Sources */,
+				36F2284A2DAE456200FFAD73 /* QYViewController.m in Sources */,
+				36F2284B2DAE456200FFAD73 /* PDFUtil.m in Sources */,
+				36F2284C2DAE456200FFAD73 /* XSingleView.m in Sources */,
+				36F2284D2DAE456200FFAD73 /* File.swift in Sources */,
+				36F2284E2DAE456200FFAD73 /* AppDelegate.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* AMSDK-iOS_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3642570D2DB0BADD00F45DB9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3642570E2DB0BADD00F45DB9 /* en */,
+				364257132DB0CCBF00F45DB9 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+				364257122DB0CCBA00F45DB9 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C5D7289EC95FDC6F922E16A /* Pods-AMSDK-iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DJ82QB95;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMSDK-iOS/AMSDK-iOS-Prefix.pch";
+				INFOPLIST_FILE = "AMSDK-iOS/AMSDK-iOS-Info.plist";
+				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"AMSDK_iOS\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"opencv2\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quyin.LMSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86822A79066D9E0FA8E962D /* Pods-AMSDK-iOS_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7DJ82QB95;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AMSDK-iOS/AMSDK-iOS-Prefix.pch";
+				INFOPLIST_FILE = "AMSDK-iOS/AMSDK-iOS-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quyin.LMSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 125A2487AE41D993DCDB090F /* Pods-AMSDK-iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMSDK-iOS_Example.app/AMSDK-iOS_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC63217B2725D062F8E48CDE /* Pods-AMSDK-iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMSDK-iOS_Example.app/AMSDK-iOS_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "AMSDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "AMSDK-iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "AMSDK-iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
