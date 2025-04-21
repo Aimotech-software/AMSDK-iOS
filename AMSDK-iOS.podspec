@@ -34,5 +34,5 @@ Pod::Spec.new do |s|
   s.source_files = 'AMSDK-iOS/Classes/**/*'
   s.vendored_frameworks = 'AMSDK-iOS/frameworks/*.xcframework'
   s.static_framework = true
-  s.dependency 'OpenCV', '3.4.6' :xcframeworks => true
+  s.dependency 'OpenCV', '3.4.6'
 end

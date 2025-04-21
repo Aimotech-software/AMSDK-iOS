@@ -6,7 +6,6 @@ platform :ios, '10.0'
 
 target 'AMSDK-iOS_Example' do
   pod 'AMSDK-iOS', :path => '../'
-  pod 'OpenCV', :xcframeworks => true
 
   target 'AMSDK-iOS_Tests' do
     inherit! :search_paths
