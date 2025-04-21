@@ -1,0 +1,6 @@
+framework module QYAI {
+  umbrella header "QYAI-umbrella.h"
+
+  export *
+  module * { export * }
+}

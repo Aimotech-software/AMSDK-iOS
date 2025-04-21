@@ -1,5 +1,5 @@
 PODS:
-  - AMSDK-iOS (0.1.0):
+  - AMSDK-iOS (0.1.3):
     - OpenCV (= 3.4.6)
   - OpenCV (3.4.6)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AMSDK-iOS: c8e4c59518139479fb05cdfeb0f5bde2a388c566
+  AMSDK-iOS: 914108a5c635243b5ead2672fae4473a14a84276
   OpenCV: 1df7b8ab75900ef4365905b989bf60f5ca4101aa
 
 PODFILE CHECKSUM: 1f989aa5a648b17ec3f70e844aee9c2f314a60ec

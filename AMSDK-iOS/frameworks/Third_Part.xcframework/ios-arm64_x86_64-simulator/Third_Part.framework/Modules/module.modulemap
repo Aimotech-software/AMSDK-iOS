@@ -1,0 +1,6 @@
+framework module Third_Part {
+  umbrella header "Third_Part-umbrella.h"
+
+  export *
+  module * { export * }
+}

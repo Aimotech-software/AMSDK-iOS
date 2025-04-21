@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AMSDK-iOS'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of AMSDK-iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -27,9 +27,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Aimotech-software/AMSDK-iOS.git', :tag => s.version.to_s }
   s.platform     = :ios, '10.0'
   s.ios.deployment_target = '10.0'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
 
   s.source_files = 'AMSDK-iOS/Classes/**/*'
-  s.vendored_frameworks = 'AMSDK-iOS/frameworks/*.framework'
+  s.vendored_frameworks = 'AMSDK-iOS/frameworks/*.xcframework'
   s.static_framework = true
-  s.dependency 'OpenCV', '3.4.6'
+  s.dependency 'OpenCV', '3.4.6' :xcframeworks => true
 end

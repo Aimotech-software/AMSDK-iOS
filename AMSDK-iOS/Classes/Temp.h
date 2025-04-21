@@ -10,7 +10,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Temp : NSObject
-
+- (void)temp;
+- (void)temp2;
+- (NSString *)temp3;
+- (NSString *)temp4;
+- (NSString *)temp5;
 @end
 
 NS_ASSUME_NONNULL_END
