@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AMSDK-iOS'
   s.version          = '0.1.7'
-  s.summary          = 'A short description of AMSDK-iOS.'
+  s.summary          = 'Printer SDK  in iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  AiMO tech SDK
-                       DESC
+  The AMSDK provides the capabilities to search for and connect to printers, as well as print content.
+                      DESC
 
   s.homepage         = 'https://github.com/Aimotech-software'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
