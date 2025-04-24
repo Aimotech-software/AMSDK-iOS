@@ -29,9 +29,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
-
-  s.source_files = 'AMSDK-iOS/Classes/**/*'
   s.vendored_frameworks = 'AMSDK-iOS/frameworks/*.xcframework'
   s.static_framework = true
   s.dependency 'OpenCV', '3.4.6'
