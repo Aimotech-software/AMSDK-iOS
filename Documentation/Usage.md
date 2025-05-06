@@ -18,10 +18,16 @@ The AMSDK-iOS provides functions such as BLE scanning, connection, and printing.
 
 
 ## Initialize the Printer Instance
-Initialization requires passing two variables, AppKey and AppToken, which are provided to developers by AiMO's business team. During the initialization process, we will use these two variables to request the corresponding configuration information. This configuration information includes details about the devices that the developer can connect to. Therefore, devices not included in this configuration will not trigger callbacks during the scanning process.
+Initialization requires passing a variable, SecretKey, which are provided to developers by AiMO's business team. During the initialization process, we will use these two variables to request the corresponding configuration information. This configuration information includes details about the devices that the developer can connect to. Therefore, devices not included in this configuration will not trigger callbacks during the scanning process.
 ```swift
-[[QYPrinter sharedInstall]registerWithAppKey:@"xxxxxx" appToken:@"xxxxxx"];
+[[QYPrinter sharedInstall]registerWithSecretKey:@"xxxxxxxxxxxxx"];
 ```
+
+Note:
+This method requires an active internet connection to function properly. If network connectivity is temporarily unavailable, you should implement network monitoring to ensure the method is only invoked when the connection is restored. Failure to do so will result in unsuccessful configuration retrieval, preventing subsequent operations from executing.
+
+This method supports multiple invocations when needed.
+
 
 
 ## Scan BLE Printer
