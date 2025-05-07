@@ -26,7 +26,7 @@ AIMO SDK, developed by Aimo Inc, is a software development kit for printers. It 
 
 | Platform                                             | Minimun XCode Version | Installation                                                                                                         
 | ---------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------- 
-| iOS 10.0+ /                                          | Xcode 16.0            | [CocoaPods](#cocoapods)
+| iOS 10.0+                                            | Xcode 15.0            | [CocoaPods](#cocoapods)
 
 
 ### Dependency
