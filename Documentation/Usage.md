@@ -18,9 +18,15 @@ The AMSDK-iOS provides functions such as BLE scanning, connection, and printing.
 
 
 ## Initialize the Printer Instance
-Initialization requires passing a variable, SecretKey, which are provided to developers by AiMO's business team. During the initialization process, we will use these two variables to request the corresponding configuration information. This configuration information includes details about the devices that the developer can connect to. Therefore, devices not included in this configuration will not trigger callbacks during the scanning process.
+Initialization requires passing two variables, SecretKey and Env, SecretKey is  provided to developers by AiMO's business team. During the initialization process, we will use these two variables to request the corresponding configuration information. This configuration information includes details about the devices that the developer can connect to. Therefore, devices not included in this configuration will not trigger callbacks during the scanning process.
+
+The variable Env indicates the domain environment you need to request.
+* If the request is for non-Chinese regions, use QYEnv_Production_Global.
+* If the request is for China, use QYEnv_Production_Chinese.
+
+
 ```swift
-[[QYPrinter sharedInstall]registerWithSecretKey:@"xxxxxxxxxxxxx"];
++ (void)registWithAppKey:(nonnull NSString *)secretKey env:(QYEnv)env;
 ```
 
 Note:
