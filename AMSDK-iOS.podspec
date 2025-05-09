@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AMSDK-iOS'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Printer SDK  in iOS'
 
 # This description is used to generate tags and improve search results.
@@ -27,9 +27,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Aimotech-software/AMSDK-iOS.git', :tag => s.version.to_s }
   s.platform     = :ios, '10.0'
   s.ios.deployment_target = '10.0'
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.vendored_frameworks = 'AMSDK-iOS/frameworks/*.xcframework'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64' }
+  s.vendored_frameworks = 'AMSDK-iOS/Frameworks/*.framework'
+  s.source_files  = 'AMSDK-iOS/Classes/*.m'
   s.static_framework = true
   s.dependency 'OpenCV', '3.4.6'
 end

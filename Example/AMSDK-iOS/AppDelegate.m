@@ -16,7 +16,7 @@
 #import "QYLocalNetworkAuthorization.h"
 #import "PrinterHomeViewController.h"
 #import "PrinterSetViewController.h"
-#import <QYPrintSDK/QYPrinter+Customer.h>
+#import <QYPrintSDK/QYPrinter+Internal.h>
 #import "I18nManager.h"
 @interface AppDelegate ()
 
@@ -105,7 +105,8 @@
     
     //[QYPrinter registWithAppKey:QYAppType_YXS bundlePath:NULL];
     
-    [QYPrinter setup];
+    //[QYPrinter registWithAppKey:@"" env:QYEnv_Production_Chinese];
+    [QYPrinter registWithAppKey:@"" env:QYEnv_Production_Global];
     
     
     PrinterHomeViewController *homeVC = [[PrinterHomeViewController alloc] init];
