@@ -10,7 +10,6 @@
 		1C8A7FC6B9064C70AE66B0C3 /* Pods_AMSDK_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C2EB7D261C77C952A4512D /* Pods_AMSDK_iOS_Tests.framework */; };
 		3642570F2DB0BADD00F45DB9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3642570D2DB0BADD00F45DB9 /* Localizable.strings */; };
 		364257162DB0D5F300F45DB9 /* I18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 364257152DB0D5F300F45DB9 /* I18nManager.m */; };
-		365DD5532DB0DC7A00A27EBF /* config in Resources */ = {isa = PBXBuildFile; fileRef = 365DD5522DB0DC7A00A27EBF /* config */; };
 		36F228492DAE456200FFAD73 /* XHudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228452DAE456200FFAD73 /* XHudManager.m */; };
 		36F2284A2DAE456200FFAD73 /* QYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228342DAE456200FFAD73 /* QYViewController.m */; };
 		36F2284B2DAE456200FFAD73 /* PDFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F228422DAE456200FFAD73 /* PDFUtil.m */; };
@@ -77,7 +76,6 @@
 		364257132DB0CCBF00F45DB9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		364257142DB0D5F300F45DB9 /* I18nManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = I18nManager.h; sourceTree = "<group>"; };
 		364257152DB0D5F300F45DB9 /* I18nManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = I18nManager.m; sourceTree = "<group>"; };
-		365DD5522DB0DC7A00A27EBF /* config */ = {isa = PBXFileReference; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
 		36F2282D2DAE456200FFAD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		36F2282E2DAE456200FFAD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		36F2282F2DAE456200FFAD73 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -333,7 +331,6 @@
 		6003F593195388D20070C39A /* Example for AMSDK-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				365DD5522DB0DC7A00A27EBF /* config */,
 				36F228AC2DAE49A700FFAD73 /* Base */,
 				36F2288D2DAE45D200FFAD73 /* Printer */,
 				36F2282D2DAE456200FFAD73 /* AppDelegate.h */,
@@ -503,7 +500,6 @@
 				36F228A62DAE45D200FFAD73 /* QYPrintActionViewController.xib in Resources */,
 				3642570F2DB0BADD00F45DB9 /* Localizable.strings in Resources */,
 				36F228A72DAE45D200FFAD73 /* QYPrinterCell.xib in Resources */,
-				365DD5532DB0DC7A00A27EBF /* config in Resources */,
 				36F228A82DAE45D200FFAD73 /* QYClickEditCell.xib in Resources */,
 				36F228A92DAE45D200FFAD73 /* QYClickSelectCell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
