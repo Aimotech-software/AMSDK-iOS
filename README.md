@@ -54,6 +54,10 @@ We use OpenCV to crop or scale images. Currently, the version of OpenCV we depen
 pod 'AIMOSDK-iOS'
 ```
 
+## FAQ
+Our answers to frequently asked questions about mobile SDKs so far are shown below. Before you email us your questions, please check the following.
+### Are the SDKs on this website available for free?
+Yes, the SDKs obtained from GitHub and CocoaPods are free. However, you cannot directly scan for and connect to AIMO printers. You must contact the staff of AIMO Inc. to obtain the corresponding tokens and keys in order to use the SDK properly.
 
 ## License
 
