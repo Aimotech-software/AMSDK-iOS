@@ -58,6 +58,7 @@
 "断开连接成功"  =    "Disconnect success";
 "断开连接失败"  =    "Disconnect failed";
 "连接失败"  =    "Connection failed";
+"断开连接" = "Disconnect";
 "不支持"  =    "Not supported";
 "%@-(%@=连接)" = "%@-(%@ connected)";
 "蓝牙交互方式"  =    "Bluetooth mode";
@@ -79,6 +80,7 @@
 "取消"  =    "Cancel";
 "外部设备"  =    "External device";
 "纸张类型"  =    "Paper type";
+"纸张规格"  =    "Paper Size";
 "连续纸"  =    "Continuous paper";
 "定孔位"  =    "Fixed hole position";
 "间隙纸"  =    "Gap paper";
@@ -107,7 +109,7 @@
 "连续"  =    "Continuous";
 "分页"  =    "Pagination";
 "打印阶数"  =    "Print levels";
-"阶"  =    "Level";
+"%d阶"  =    "Level %d";
 "抗皱模式"  =    "Anti-wrinkle mode";
 "关闭"  =    "Off";
 "弱"  =    "Weak";
@@ -119,10 +121,13 @@
 "打印机未连接"  =    "Printer not connected";
 "打印机开盖"  =    "Printer cover open";
 "打印机缺纸"  =    "Printer out of paper";
+"宽度" = "width";
+"高度" = "height";
 "纸张类型、纸张规格和最大打印点数，纸张宽度数据有误，无法打印"  =    "Invalid paper type/specs/max dots/width data";
 "第%d张，总%d张" = "Sheet %d of %d";
 "打印完成,高度%f毫米 " = "Print complete, height %f mm";
 "蓝牙连接"  =    "Bluetooth connection";
+"蓝牙"  =    "Bluetooth";
 "局域网连接"  =    "LAN connection";
 "我的网络"  =    "My network";
 "可连接网络"  =    "Available networks";
@@ -139,4 +144,12 @@
 "切换语言" = "switch the language";
 "切换语言，之后下次启动生效" = "Switch the language, and the change will take effect the next time the application/device is launched. ";
 "设置" = "Setting";
+"是否加密" = "Encrypted or not";
+"加密" = "Encrypted";
+"不加密" = "Unencrypted";
+"打印设置" = "Print Settings";
+"立即打印" = "Print Now";
+"选择图片" = "Select Image";
+"%d分钟" = "%d minutes";
+"点击连接" = "click connect";
 

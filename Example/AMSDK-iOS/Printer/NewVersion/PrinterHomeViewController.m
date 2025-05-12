@@ -361,8 +361,8 @@ if(row == index) {\
                 QYConnectTableViewCell *cell_ = ((QYConnectTableViewCell*)[tableView dequeueReusableCellWithIdentifier:actionIdentify forIndexPath:indexPath]);
                 cell_.titleLabel.text = dic[@"title"];
                 if(QYPrinter.sharedInstance.printerIsConnect) {
-                    cell_.titleLabel.text = [NSString stringWithFormat:[I18nManager stringWithKey:@"%@-(%@连接)"],QYPrinter.sharedInstance.connectedPrinterInfo.device.modelName,QYPrinter.sharedInstance.connectedState == QYPrinterConnectedState_BLE ? [I18nManager stringWithKey:@"蓝牙"] :@"wifi"];
-                    cell_.contentLabel.text =  @"已连接-点击进入连接其他机器";
+                    cell_.titleLabel.text = [NSString stringWithFormat:[I18nManager stringWithKey:@"%@-(%@)"],QYPrinter.sharedInstance.connectedPrinterInfo.device.modelName,QYPrinter.sharedInstance.connectedState == QYPrinterConnectedState_BLE ? [I18nManager stringWithKey:@"蓝牙"] :@"wifi"];
+                    cell_.contentLabel.text =  [I18nManager stringWithKey:@"已连接-点击进入连接其他机器"];
                 }
                 else{
                     cell_.contentLabel.text =  dic[@"action"];
@@ -422,7 +422,7 @@ if(row == index) {\
             setCotent_ins(11, ([NSString stringWithFormat:@"%@",info.hardwareVersion ? :@"/"]),QYQueryInstructionType_HardwareVersion)//硬件版本，暂时没有
             setCotent_ins(12, ([NSString stringWithFormat:@"%@",info.communicateVersion ? :@"/"]),QYQueryInstructionType_ComunicateVersion)//通讯版本，暂时没有
             setCotent_ins(13, ([NSString stringWithFormat:[I18nManager stringWithKey:@"没处理"]]),QYQueryInstructionType_CompressDataSize)//可压缩数据包大小，暂时没有
-            setCotent_ins(14, ([NSString stringWithFormat:@"%@",info.bleType == QYBLEType_JIELI ? [I18nManager stringWithKey:@"杰里"]:[I18nManager stringWithKey:@"普通"]]),QYQueryInstructionType_BLEType);
+            setCotent_ins(14, ([NSString stringWithFormat:@"%@",info.bleType == QYBLEType_JIELI ? [I18nManager stringWithKey:@"Jieli"]:[I18nManager stringWithKey:@"普通"]]),QYQueryInstructionType_BLEType);
             setCotent_ins(15, ([NSString stringWithFormat:@"%@",[self ribbonStateStr]]),QYQueryInstructionType_RibbonState); //碳带状态，暂时没有
             setCotent_ins(16, ([NSString stringWithFormat:@"%@",info.wifiName ?: @"/" ]),QYQueryInstructionType_Wifi); //wifi名字，暂时没有
             setCotent_ins(17, ([NSString stringWithFormat:@"%@",info.ip ? :  @"/"]),QYQueryInstructionType_Ip); //ip，暂时没有

@@ -45,13 +45,17 @@ UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITextField *heightTextfiled;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *printSettingButton;
+@property (weak, nonatomic) IBOutlet UIButton *printNowButton;
 @property(nonatomic, strong)NSMutableDictionary *modelDictionary;
 
 @property(nonatomic, strong)NSArray *dataList;
 @property(nonatomic, assign)BOOL showSetting;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *widthLabel;
 //
+@property (weak, nonatomic) IBOutlet UILabel *heightLabel;
 @property(nonatomic, assign) int contentW_mm;
 @property(nonatomic, assign) int contentH_mm;
 @property(nonatomic, assign) int contentW_dot;
@@ -83,7 +87,7 @@ UITableViewDataSource>
 
 - (QYPrintModel*)paperTypeModel {
     QYPrintModel *model1 =   [[QYPrintModel alloc] init];
-    model1.title = @"纸张类型";
+    model1.title = [I18nManager stringWithKey:@"纸张类型"];
     model1.style = CellStyle_Select;
     
     QYBLEDevice *device = QYPrinter.sharedInstance.connectedPrinterInfo.device;
@@ -119,6 +123,11 @@ UITableViewDataSource>
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.heightLabel.text = [I18nManager stringWithKey:@"高度"];
+    self.widthLabel.text = [I18nManager stringWithKey:@"宽度"];
+    [self.printSettingButton setTitle:[I18nManager stringWithKey:@"打印设置"] forState:UIControlStateNormal];
+    [self.printNowButton setTitle:[I18nManager stringWithKey:@"立即打印"] forState:UIControlStateNormal];
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(clickHidden)];
@@ -636,7 +645,7 @@ UITableViewDataSource>
        && [QYPrinter sharedInstance].connectedPrinterInfo.device.maxPrintWidthInDot == 0
        && params.paperWidth == 0
        ) {
-        [XSingleView.sharedInstance show:@"纸张类型、纸张规格和最大打印点数，纸张宽度数据有误，无法打印"];
+        [XSingleView.sharedInstance show:[I18nManager stringWithKey:@"纸张类型、纸张规格和最大打印点数，纸张宽度数据有误，无法打印"]];
         return;
     }
     

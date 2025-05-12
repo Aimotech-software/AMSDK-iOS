@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface QYPrinterCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *macLabel;
+@property (weak, nonatomic) IBOutlet UILabel *clickConnectButton;
 
 @end
 
