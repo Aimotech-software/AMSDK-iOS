@@ -9,8 +9,6 @@ AIMO SDK, developed by Aimo Inc, is a software development kit for printers. It 
 - [List of Mobile SDK Supported Models](#list-of-mobile-sdk-supported-models)
 - [Usage](https://github.com/Aimotech-software/AMSDK-iOS/blob/master/Documentation/Usage.md)
 - [FAQ](#faq)
-- [Credits](#credits)
-- [Donations](#donations)
 - [License](#license)
 
 ## Features
