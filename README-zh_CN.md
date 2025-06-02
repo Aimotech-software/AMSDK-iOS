@@ -1,6 +1,6 @@
 ![AIMOSDK](https://raw.githubusercontent.com/Aimotech-software/AMSDK-iOS/master/AIMOSDKLogo.png)
 
-英文(./README.md) | 中文
+[英文](./README.md) | 中文
 
 AIMO SDK 由 Aimo 公司开发，是一款用于打印机的软件开发工具包。它为开发者提供了便捷的接口，使其能够轻松实现各种打印功能并满足多样化需求。
 
