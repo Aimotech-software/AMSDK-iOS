@@ -17,9 +17,12 @@
 AMSDK-iOS 提供了诸如蓝牙低功耗（BLE）扫描、连接以及打印等功能。（部分设备还支持像 Wi-Fi 网络配置、连接和打印等功能。特定型号的设备是否支持这些功能，SDK 提供了相应的查询能力。你也可以联系 AIMO 公司的工作人员进行确认。）
 
 ## 初始化打印机实例
-初始化需要传入两个变量，即 AppKey 和 AppToken，这些由 AIMO 的业务团队提供给开发者。在初始化过程中，我们将使用这两个变量来请求相应的配置信息。此配置信息包含开发者能够连接的设备的详细信息。因此，未包含在此配置中的设备在扫描过程中不会触发回调。
+初始化需传入两个变量：SecretKey和Env，其中SecretKey由AiMO商务团队提供给开发者。在初始化过程中，我们将使用这两个变量请求对应的配置信息。该配置信息包含开发者可连接设备的相关详情，因此未包含在此配置中的设备在扫描过程中将不会触发回调。
+变量Env表示您需要请求的域名环境：
+* 若请求非中国地区服务，请使用 QYEnv_Production_Global
+* 若请求中国地区服务，请使用 QYEnv_Production_Chinese
 ```swift
-[[QYPrinter sharedInstall]registerWithAppKey:@"xxxxxx" appToken:@"xxxxxx"];
+[[QYPrinter sharedInstall]registerWithAppKey:@"xxxxxx" env:env_];
 ```
 
 ## 扫描蓝牙低功耗（BLE）打印机
